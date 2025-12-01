@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: red;
+}
+
+/* Container com calendários lado a lado */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Caixas dos calendários */
+.calendario {
+    background: #fff;
+    padding: 10px;
+    width: 230px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+/* Tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th {
+    background: #eee;
+    padding: 5px 0;
+    font-weight: bold;
+}
+
+td {
+    border: 1px solid #ccc;
+    height: 28px;
+}
+
+/* ---------------------------- */
+/* AQUI VOCÊ ESCOLHE AS CORES! */
+/* ---------------------------- */
+
+.etapa1 { background: #155de3 ; }
+.etapa2 { background: greenyellow ; }
+.etapa3 { background: rgb(244, 33, 33) ; }
+.etapa4 { background: rgb(251, 251, 15) ; }
+.etapa5 { background: #008cff ; }
+.etapa6 { background: rgb(239, 144, 11) ; }
+
+
+.legenda_main {
+    
+    top: 20px;            
+    right: 20px; 
+    padding: 20px;         
+}
+
+.legenda {
+    width: 180px;         /* 🔥 Diminui o tamanho da tabela */
+    font-size: 14px;      /* Tamanho menor do texto */
+    border-collapse: collapse;
+    background: #fff;
+    padding: 5px;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+.legenda th {
+    background: #eee;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.legenda td {
+    padding: 4px 6px;
+    border-bottom: 1px solid #ddd;
+}
+
+.macrociclo {
+    width: fit-content;        /* ocupa só o necessário */
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end; /* joga para o canto direito */
+}
+
+.tabela_macrociclo {
+    font-size: 13px;           /* tabela menor */
+    border-collapse: collapse;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.tabela_macrociclo th,
+.tabela_macrociclo td {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.tabela_macrociclo th {
+    background: #e8e8e8;
+    font-weight: bold;
+}
+
+.fases_treinamento{
+    width: fit-content;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tabela_treino{
+    font-size: 13px;
+    border-collapse: collapse;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
