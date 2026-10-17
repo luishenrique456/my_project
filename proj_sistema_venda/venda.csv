@@ -1,0 +1,6 @@
+data,produto,preco_unitario,quantidade,forma_pagamento
+2026-10-16,Fone,49.9,2,PIX
+2026-10-16,Notebook ,1500.0,1,dinheiro
+2026-10-16,Fone,50.9,3,PIX
+2026-10-16,carregador,15.0,2,cartão de débito
+
