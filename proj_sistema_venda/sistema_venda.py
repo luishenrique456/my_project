@@ -12,8 +12,17 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
+from pathlib import Path
+
+# Caminho do venda.csv, sempre na mesma pasta do sistema_venda.py
+caminho_csv = Path(__file__).parent / "venda.csv"
+
+
+tabela_vendas = pd.read_csv(caminho_csv)
+
 # Carregar a base de vendas
-tabela_vendas = pd.read_csv("venda.csv")
+# caminho_csv = mesma pasta do .py (funciona no deploy); index=False = não grava a numeração das linhas
+tabela_vendas = pd.read_csv(caminho_csv, index=False)
 
 
 st.write("# Sistema de Vendas")
