@@ -17,12 +17,9 @@ from pathlib import Path
 # Caminho do venda.csv, sempre na mesma pasta do sistema_venda.py
 caminho_csv = Path(__file__).parent / "venda.csv"
 
-
+# Carregar a base de vendas
 tabela_vendas = pd.read_csv(caminho_csv)
 
-# Carregar a base de vendas
-# caminho_csv = mesma pasta do .py (funciona no deploy); index=False = não grava a numeração das linhas
-tabela_vendas = pd.read_csv(caminho_csv, index=False)
 
 
 st.write("# Sistema de Vendas")
@@ -49,7 +46,10 @@ if botao_cadastrar:
         nova_venda = [str(data),produto,preco_unitario,quantidade,forma_pagamento]
         ultima_linha = len(tabela_vendas)
         tabela_vendas.loc[ultima_linha] = nova_venda
-        tabela_vendas.to_csv("venda.csv",index=False)
+        # Salva no mesmo venda.csv que foi lido (caminho_csv), na pasta do sistema_venda.py.
+        # Usar caminho_csv (e não "venda.csv") para funcionar também no deploy do Streamlit Cloud.
+        # index=False evita gravar a coluna de números 0, 1, 2... dentro do arquivo.
+        tabela_vendas.to_csv(caminho_csv, index=False)
         st.success("Venda Cadastrada! com Sucesso")
 
 #Seção de visualizar as vendas
