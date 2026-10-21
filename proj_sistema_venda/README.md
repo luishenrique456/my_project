@@ -69,7 +69,7 @@ python -m streamlit run sistema_venda.py
 - **Desenvolvi** o protótipo completo do sistema de vendas, da tela de cadastro ao dashboard.
 - **Fui responsável** por levantar as necessidades do vendedor, projetar as telas, implementar o cadastro com validação, o salvamento dos dados e os gráficos.
 - **Utilizei** Python, Streamlit, Pandas e Plotly.
-- **Obtivemos o resultado:** [preencher: por exemplo, o vendedor conseguiu registrar vendas e acompanhar o faturamento sem planilhas manuais; sugestões de melhoria recebidas: ...]
+- **Obtivemos o resultado:** o protótipo foi validado com um vendedor real da loja, usando apenas dados fictícios. No questionário de avaliação (Google Forms), ele atribuiu nota máxima (5/5) para a facilidade de uso no cadastro de vendas, para a rapidez e praticidade do formulário e para a utilidade do dashboard no acompanhamento das vendas. O feedback também indicou melhorias para uma próxima versão: função para apagar uma venda em caso de troca ou devolução e cálculo automático da quantidade de itens repetidos na mesma compra.
 
 ## Aviso sobre os dados
 
